@@ -3065,3 +3065,17 @@
 		}
 
 	}
+
+	.selected-thumb {
+	    text-align: center;
+	    border: #a0a0a0 solid 1px;
+	}
+	
+	.selected-thumb img {
+	    display: inline-block;
+	    vertical-align: middle;
+	    width:auto;
+	    height:auto;
+	    max-height:90%;
+	    max-width:90%;
+	}

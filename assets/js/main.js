@@ -3,6 +3,33 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+var slideIndexOne = 1;
+showSlidesOne(slideIndexOne);
+
+function plusSlidesOne(nOne) {
+  showSlidesOne(slideIndexOne += nOne);
+}
+
+function currentSlideOne(nOne) {
+  showSlidesOne(slideIndexOne = nOne);
+}
+
+function showSlidesOne(nOne) {
+  var iOne;
+  var slidesOne = document.getElementsByClassName("mySlidesOne");
+  var dotsOne = document.getElementsByClassName("dotOne");
+  if (nOne > slidesOne.length) {slideIndexOne = 1} 
+  if (nOne < 1) {slideIndexOne = slidesOne.length}
+  for (i = 0; i < slidesOne.length; i++) {
+      slidesOne[i].style.display = "none"; 
+  }
+  for (i = 0; i < dotsOne.length; i++) {
+      dotsOne[i].className = dotsOne[i].className.replace(" active", "");
+  }
+  slidesOne[slideIndexOne-1].style.display = "block"; 
+  dotsOne[slideIndexOne-1].className += " active";
+}
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -29,8 +56,34 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
-(function($) {
 
+var slideIndexTwo = 1;
+showSlidesTwo(slideIndexTwo);
+
+function plusSlidesTwo(nTwo) {
+  showSlidesTwo(slideIndexTwo += nTwo);
+}
+
+function currentSlideTwo(nTwo) {
+  showSlidesTwo(slideIndexTwo = nTwo);
+}
+
+function showSlidesTwo(nTwo) {
+  var iTwo;
+  var slidesTwo = document.getElementsByClassName("mySlidesTwo");
+  var dotsTwo = document.getElementsByClassName("dotTwo");
+  if (nTwo > slidesTwo.length) {slideIndexTwo = 1} 
+  if (nTwo < 1) {slideIndexTwo = slidesTwo.length}
+  for (i = 0; i < slidesTwo.length; i++) {
+      slidesTwo[i].style.display = "none"; 
+  }
+  for (i = 0; i < dotsTwo.length; i++) {
+      dotsTwo[i].className = dotsTwo[i].className.replace(" active", "");
+  }
+  slidesTwo[slideIndexTwo-1].style.display = "block"; 
+  dotsTwo[slideIndexTwo-1].className += " active";
+}
+(function($) {
 	// Breakpoints.
 		skel.breakpoints({
 			xlarge:	'(max-width: 1680px)',

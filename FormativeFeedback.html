@@ -29,25 +29,10 @@
 <section id="three" class="wrapper">
 	<div class="inner">
     <h2>Testing</h2>
-    <h3>Test Plan Improvement</h3>
-    <p>Test Plan Improvement:
-Reading through all the documents for testing the system to the users, we have found couple of features that were not explicitly accounted for. Here are some additional feature we have added to the test.
 
-For their usability goal “<strong>The system should be easily understood by the user</strong>”, we have though to add the understanding icons present in the webpage. As the icons in questions are present in the most important part of the webpage (new note), we have added questionnaires asking user to explain in their own word what each icon ment to them. This was also to test if the users were able to remember the description written in the user manual as no descriptions were present on each icons on the webpage (quick reminder).
-
-Reading through the test script and test description, we believed that there was no test that represented the usability goal “<strong>The system should be effective at taking notes</strong>”. As such, we have added a test to measure and compare the note taking ability on the webpage against a hand written test.  The test will consist of users listening to a text on two different country (Swaziland and Bouthan) with similar topics. After taking notes on each countries using one methods for each country, we would ask questions on each countries too see if there is a noticeable different between the two methods and receiving user feedback their thoughts.
-
-We also noticed that there were no questions to test the usability goal “<strong>The system should not hinder any normal user activities</strong>”. As such, we have added questions 4 and 5 in the new post-questionnaire.</p>
 	<h3>Test Subjects</h3>
     <p>We have tested the system on three different test subjects. These subjects were students involved in different programs. We conducted the test in the McConnel cafetaria using a MacBook laptop.</p>
     <h3>Documents</h3>
-   	  <h4>Modified test documents</h4>
-            <a href="images/Formative Feedback/Documents/Pre-test_Questionnaire.pdf"><p>Pre-test Questionnaire</p></a>
-      <a href="images/Formative Feedback/Documents/Task_Description.pdf"><p>Task Description</p></a>
-            <a href="images/Formative Feedback/Documents/Test_Script.pdf"><p>Test script</p></a>
-            <a href="images/Formative Feedback/Documents/Post-test_Questionnaire.pdf"><p>Post-test Questionnaire</p></a>
-			<a href="images/Formative Feedback/Documents/Data_Collection_Sheet.pdf"><p>Data Collection Sheet</p></a>
-            <a href="images/Formative Feedback/Documents/Country Quiz.pdf"><p>Country Quiz</p></a>
         <h4>Completed test subject documents</h4>
             <a href="images/Formative Feedback/Formative_feedBack_User1.PDF"><p>Test Subject #1</p></a>
             <a href="images/Formative Feedback/Formative_feedBack_User2.PDF"><p>Test Subject #2</p></a>
@@ -232,7 +217,7 @@ We also noticed that there were no questions to test the usability goal “<stro
             	<th style="border-right: 1px solid black">User tried to enter the time directly without using the sliders. User commented that they did not like the sliders and did not know whether the time was in 12h or 24h format. User said that the event field is too large. The invite People was confusing, too much information and the fact that it takes you to another screen is disorientating.</th>
 			</tr>            
 		</table>
-<h3>User #3 Comments</h3>   
+<h3>User #3 Observations</h3>   
 		<table>           
             <tr style="border-bottom: 1px solid black; background:white">
                 <th style="border-right: 1px solid black">Task</th>
@@ -268,51 +253,29 @@ We also noticed that there were no questions to test the usability goal “<stro
             	<th style="border-right: 1px solid black">User commented that the Main menu button from the My Files page could be bigger</th>
 			</tr>
 		</table>
-   	<h3>Usability Evaluation</h3>
-   	<p>The Usability evaluation was carried out by the 3 members of the testing team prior to testing with users. We individually went through the system and noted any issues we had with the system. We then came together and grouped the issues we had under the recommended usability heuristics provided in the evaluation plan.</p>
-   	<h4>Visibility of system status</h4>
-    <p>The progress of uploads is a poor heuristic to judge the system by. This is more suited to applications with bulk uploads or large file sizes, neither of which are applicable to a note taking application. The more glaring issue we found was that the system does not communicate the state of notes. There are no confirmation messages when notes are saved. There is no indication where the note is saved to, or where one can access that note later. It is not clear which video, audio and image files are associated with which note. The system should communicate these things to the user.
-<br/><br/>
-We suggest adding confirmation messages in the Organize and Upload screen, specifying where the notes were saved, and providing the user with a direct link to the uploaded notes. Similarly, adding a confirmation messages in the Edit Note screen which indicate when and where a note has been saved would help inform the user of the system status.
-</p>
-	<h4>User control and freedom</h4>
-	<p>Overall the system grants the user a good degree of control and freedom, however we did find that the My Files menu took some of that control away. Navigation was restricted to clicking directly on folders and headings, rather than a separate menu. Without the navigation bar it was unclear how to return to the main menu. Clicking on a file lead directly into the Edit Note screen, with no obvious way to return to the specific folder in the My Files menu. 
-<br/><br/>
-We suggest keeping the navigation bar, or something similar, in the My FIles screen so that navigation through the files is as simple as the rest of the system.
-</p>
-    <h4>Consistency and standards</h4>
-    <p>The My Files menu has a completely different layout, style and navigation system compared to the rest of the application. The My Files menu breaks consistency with the rest of the system and is partially responsible for why we found that section more difficult to navigate.  
-<br/><br/>
-The logos in the Edit Note screen are another place where the consistency of the system is broken. They are the only images used for navigation in the entire system, and there is no hover text or label to make the meaning of the label clear. In addition, the logos take the user to a different site, without warning. If you want to incorporate the functionality of another website into yours, it should either be fully integrated or the user should be notified they are opening a separate site.
-<br/><br/>
-We suggest changing the My Files screen’s layout to make it more consistent with the rest of the system.</p>
-   	<h4>Error prevention</h4>
-    <p>The system provides very little error prevention beyond the Login/Registration screen. There are no warnings for creating multiple notes with the same name. The same applies with the uploads in the Organize screen. This is major error that could result in the user losing valuable data. 
-<br/><br/>
-The system does not warn the user when navigating away from an incomplete note. The flaw, coupled with the previously mentioned lack of saving indicators, means the user is always unsure whether leaving the Edit Note screen will result in data loss. The system does not stop the user from leaving a note unsaved, another major error that could result in data loss.
-<br/><br/>
-We suggest adding confirmation popups when the user attempts to navigate off a page without saving their work. Also, warning messages when the user creates a new note or upload that has the same name as one already saved. 
-</p>
-    <h4>Recognition rather than recall</h4>
-    <p>The logos in the Edit screen not only broke consistency but also favoured recall over recognition. It was not clear what each button did based on the image alone. A first time user would not be able to determine the functionality of all the buttons without having read the user manual beforehand.
-<br/><br/>
-We suggest finding images with more clear meanings, or if that is not possible hover text that explains what the button does. This will save the user from having to search the manual every time. 
-</p>
-    <h4>Flexibility and efficiency of use</h4>
-	<p>During our evaluation we found no accelerators or “frequent action” options. The system is rigid in its interactions and there are no clearly communicated ways to speed up the note taking process. The suggested accelerator,  HTML autocomplete,  is not applicable to this context as the forms requiring data entry are all short and almost always require unique data like names. 
-<br/><br/>
-We suggest adding accelerators like suggested people for events, common tags for uploads, note templates and keyboard shortcuts. The system’s flexibility could be improved by adding different ways to organize their notes e.g. by date created or uploaded, and allowing the user to link specific files directly to the note. These features will help the experienced user make more efficient use of your system.
-</p>
-    <h4>Aesthetic and minimalist design</h4>
-    <p>All evaluators found the aesthetic not distracting and the minimalist design made navigating around the major menus simple.</p>
-    <h4>Help users recognize, diagnose, and recover from errors</h4>
-    <p>We were unable to trigger any errors and hence could not assess the system’s ability to recover from errors.</p>
-    <h4>Help and documentation</h4>
-    <p>The user manual is not accessible from the application itself. All users would need to provided with the link separately, which is neither convenient nor feasible. In the user manual itself, the buttons for editing text are not explained in detail. This is a problem because, as mentioned earlier, not all the buttons are easily recognizable and the manual is only point of clarification for a confused user. 
-<br/><br/>
-We suggest proving a direct link to the user manual in the application. The user manual should explain the functionality of each button in more detail in the manual and make it explicitly clear which buttons link to separate websites.
-</p>
-   	  <table>           
+
+<h3>Feedback Analysis</h3>
+<p>Over the course of the test, all threee users made similar critiques of the system. Moreover, the three test subjects found themselves struggling at the same steps in the test plan. This implies that the problems brought to light below would affect most of the potential userbase. One-off comments only made by one subject could also proved insightful. Even if these gripes were mostly about the overall feel of the website and not core functions, they should be addressed by the development team after more important issues are resolved. For example, because of a hand injury one user wasn't able to type with their keyboard. Although not included in the scope of the test, potential functions such as reccord audio and video could have helped with note taking. Listed below are the similiarities between the test subjects feedback and a list of differences in the feedback that only one member brought up but can serve helpful still.</p>
+<h4>Similarities</h4>
+	<ul>
+    	<li>Difficulty to find highlight function.</li>
+    	<li>Difficulty to find underline function.</li>
+    	<li>Difficulty to find Main Menu button.</li>
+    	<li>Confusion as to add people.</li>
+    	<li>Confusion as to logo functions.</li>
+    	<li>Confusion as to time slider.</li>
+    	<li>Confusion as to state of uploaded files.</li>
+    	<li>Non-optimal note taking with system.</li>
+    </ul>
+<h4>Differences</h4>
+	<ul>
+    	<li>Injury prevented one user from typing.</li>
+    	<li>Difficulty to find Main Menu button.</li>
+    	<li>Irritation at the registration screen leading to log in as opposed to main page.</li>
+    </ul>
+    
+    <h2>Usability Issues</h2>
+       	  <table>           
             <tr style="border-bottom: 1px solid black; background:white">
                 <th style="border-right: 1px solid black">Severity</th>
                 <th style="border-right: 1px solid black">Issue</th>
@@ -353,7 +316,7 @@ We suggest proving a direct link to the user manual in the application. The user
             <tr style="border-bottom: 1px solid black">
             	<th style="border-right: 1px solid black">Low</th>
             	<th style="border-right: 1px solid black">System should log you in after registration</th>
-            	<th style="border-right: 1px solid black">Users found this a minor inconvenience. Wastes time for no reason.</th>
+            	<th style="border-right: 1px solid black">User found this a minor inconvenience. Wastes time for no reason.</th>
             </tr>  
             <tr style="border-bottom: 1px solid black">
             	<th style="border-right: 1px solid black">Low</th>
@@ -375,7 +338,26 @@ We suggest proving a direct link to the user manual in the application. The user
     <h3>The system should be effective at taking notes</h3>
     <p>Should be a note taking exercise that mimics real life situation better than editing a pre-written text. This can be done by making two quizzes, one for which they can use the note taking system the other for which they’re only allowed pencil and paper. The information will be presented like a mock-lecture and the user’s will fill in the information in the system.</p>
     
-    <h2>Design Critique</h2>
+    <h2>Test Plan Improvement</h2>
+    <p>Test Plan Improvement:
+Reading through all the documents for testing the system to the users, we have found couple of features that were not explicitly accounted for. Here are some additional feature we have added to the test.
+
+For their usability goal “<strong>The system should be easily understood by the user</strong>”, we have though to add the understanding icons present in the webpage. As the icons in questions are present in the most important part of the webpage (new note), we have added questionnaires asking user to explain in their own word what each icon ment to them. This was also to test if the users were able to remember the description written in the user manual as no descriptions were present on each icons on the webpage (quick reminder).
+
+Reading through the test script and test description, we believed that there was no test that represented the usability goal “<strong>The system should be effective at taking notes</strong>”. As such, we have added a test to measure and compare the note taking ability on the webpage against a hand written test.  The test will consist of users listening to a text on two different country (Swaziland and Bouthan) with similar topics. After taking notes on each countries using one methods for each country, we would ask questions on each countries too see if there is a noticeable different between the two methods and receiving user feedback their thoughts.
+
+We also noticed that there were no questions to test the usability goal “<strong>The system should not hinder any normal user activities</strong>”. As such, we have added questions 4 and 5 in the new post-questionnaire.</p>
+ 	 
+      <h2>Modified test documents</h2>
+            <a href="images/Formative Feedback/Documents/Pre-test_Questionnaire.pdf"><p>Pre-test Questionnaire</p></a>
+      <a href="images/Formative Feedback/Documents/Task_Description.pdf"><p>Task Description</p></a>
+            <a href="images/Formative Feedback/Documents/Test_Script.pdf"><p>Test script</p></a>
+            <a href="images/Formative Feedback/Documents/Post-test_Questionnaire.pdf"><p>Post-test Questionnaire</p></a>
+			<a href="images/Formative Feedback/Documents/Data_Collection_Sheet.pdf"><p>Data Collection Sheet</p></a>
+            <a href="images/Formative Feedback/Documents/Country Quiz.pdf"><p>Country Quiz</p></a>
+  
+  
+   <h2>Design Critique</h2>
     <p>After user feedbacks and individual testing of the webpage, we have tabulated suggestions would enhance the user experience.</p>
     	<ol>
         	<li>Adding more informative information on the welcome page. One of the user have noted that, after logging to the webpage, the webpage looked to be unnecessary. After creating multiple events and notes, show the summary on the main page would be great to have.
@@ -395,7 +377,16 @@ We suggest proving a direct link to the user manual in the application. The user
         	<li>In “<strong>My Files</strong>”, on the top left corner of the webpage, the “<strong>Main Menu</strong>” button should be much bigger and that it should resemble a button (was almost hidden in the background for one user).  One user commented that the navigation bar should be also present there for consistency. 
 </li>
         </ol>
-    
+        
+<h2>Usability Evaluation</h2>
+   	<p>The Usability evaluation was carried out by the 3 members of the testing team prior to testing with users. We individually went through the system and noted any issues we had with the system. We then came together and grouped the issues we had under the recommended usability heuristics provided in the evaluation plan.</p>
+   	<h4>Visibility of system status</h4>
+    <p>The progress of uploads is a poor heuristic to judge the system by. This is more suited to applications with bulk uploads or large file sizes, neither of which are applicable to a note taking application. The more glaring issue we found was that the system does not communicate the state of notes. There are no confirmation messages when notes are saved. There is no indication where the note is saved to, or where one can access that note later. It is not clear which video, audio and image files are associated with which note. The system should communicate these things to the user.
+<br/><br/>
+We suggest adding confirmation messages in the Organize and Upload screen, specifying where the notes were saved, and providing the user with a direct link to the uploaded notes. Similarly, adding a confirmation messages in the Edit Note screen which indicate when and where a note has been saved would help inform the user of the system status.
+</p>
+
+<a href="images/Formative Feedback/Usability Evaluation.pdf"><p>Complete Usability Evaluation</p></a>   
     
     <h2>Contributions</h2>
 		<table align="center">
